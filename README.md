@@ -31,3 +31,9 @@ This project exemplifies the five SOLID principles applied in Java, showing how 
 ---
 
 Each principle is accompanied by unit tests to validate its functionality and ensure design quality.
+
+
+## Unit test results
+<img width="2879" height="1692" alt="Captura de pantalla 2026-02-13 211640" src="https://github.com/user-attachments/assets/68b6e0f9-7846-4f8c-83cb-dfe351ad7d65" />
+
+
