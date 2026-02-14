@@ -37,10 +37,35 @@ This project exemplifies the five SOLID principles applied in Java, showing how 
 
 Each principle is accompanied by unit tests to validate its functionality and ensure design quality.
 
+## Technologies Used
+
+- **Java:** 21
+- **Maven:** (dependency and build manager)
+- **JUnit Jupiter:** 5.7.1 (unit testing)
+- **JaCoCo:** 0.8.11 (code coverage)
+
+## Commands to Run Unit Tests
+
+From the project root, run:
+
+```sh
+mvn clean test
+```
+
+To generate the code coverage report with JaCoCo:
+
+```sh
+mvn jacoco:report
+```
+
+The coverage report can be viewed at `target/site/jacoco/index.html`.
+
+---
+
 ## Unit test results
 
 <img width="2879" height="1692" alt="Captura de pantalla 2026-02-13 211640" src="https://github.com/user-attachments/assets/68b6e0f9-7846-4f8c-83cb-dfe351ad7d65" />
 
 ## Coverage - Jacoco
-<img width="2879" height="921" alt="Captura de pantalla 2026-02-13 212149" src="https://github.com/user-attachments/assets/d8d3f027-f7a4-48f7-aedc-2015b3fc20f2" />
 
+<img width="2879" height="921" alt="Captura de pantalla 2026-02-13 212149" src="https://github.com/user-attachments/assets/d8d3f027-f7a4-48f7-aedc-2015b3fc20f2" />
