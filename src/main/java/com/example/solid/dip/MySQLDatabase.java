@@ -1,20 +1,18 @@
 package com.example.solid.dip;
 
-public class MySQLDatabase {
-    public void saveOrder() {
-        System.out.println("Guardando pedido en MySQL...");
-    }
-}
-
-class OrderProcessor {
-    private MySQLDatabase database;
-
-    public OrderProcessor() {
-        this.database = new MySQLDatabase();
+public class MySQLDatabase implements Database {
+    @Override
+    public void connect() {
+        System.out.println("Conectando a MySQL...");
     }
 
-    public void processOrder() {
-        System.out.println("Procesando pedido...");
-        database.saveOrder();
+    @Override
+    public void saveOrder(String order) {
+        System.out.println("Guardando pedido en MySQL: " + order);
+    }
+
+    @Override
+    public void disconnect() {
+        System.out.println("Desconectando de MySQL...");
     }
 }
