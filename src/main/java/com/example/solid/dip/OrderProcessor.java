@@ -9,10 +9,10 @@ public class OrderProcessor {
     }
 
     public void processOrder(String orderId) {
-        System.out.println("Procesando pedido: " + orderId);
+        System.out.println("Processing order: " + orderId);
         database.connect();
         database.saveOrder(orderId);
         database.disconnect();
-        System.out.println("Pedido procesado exitosamente\n");
+        System.out.println("Order processed successfully\n");
     }
 }
